@@ -1,0 +1,298 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: #9a0606;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+    font-weight:bold;
+}
+
+body {
+    background: url(../images/bg.jpg);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-color: #000000;
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #383838;
+    padding-top: 45px;
+}
+
+#content{
+    margin: 0 auto;
+    width: 824px;
+    text-align: left;
+    background: #ffffff;
+    padding-top: 5px;
+}
+
+#main{
+    width: 812px;
+    margin: 0 auto;
+    clear:both;
+    background:url(../images/main_top.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #eeeeee;
+    padding-top: 5px;
+}
+
+#header {
+    height: 193px;
+    width: 824px;
+    background: url(../images/header.jpg) no-repeat top;
+    margin: 0 auto;
+}
+
+#logo {
+    height: 193px;
+    text-align: left;
+    width: 724px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+
+#logo a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 24px;
+    color: #ffffff;
+}
+#logo H2 a
+{
+    font-size: 18px;
+}
+
+
+#menu
+{
+    width: 824px;
+    height: 57px;
+    margin: 0 auto;
+    background: url(../images/menubg.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#menu ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#menu li {
+
+    display: inline;
+
+}
+
+#menu a {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    float: left;
+    width: 19%;
+    height: 41px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+    padding-top: 18px;
+
+}
+
+#menu a:hover{
+    color: #000000;
+    background:url(../images/menu_hov.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#left
+{
+    width: 477px;
+    padding-left: 10px;
+}
+
+.text{
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#left H1{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight:normal;
+    margin: 0;
+    color: #000000;
+    padding-top: 5px;
+    border-bottom: 1px dotted #9a0606;
+}
+
+.read{
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.read a{
+    color: #9a0606;
+    text-decoration: none;
+    border-bottom: 1px dotted #9a0606;
+}
+.col{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col p{
+    font-size: 10px;
+}
+
+.col1, .col2, .col3, .col4{
+    width: 115px;
+    text-align: center;
+    float: left;
+}
+
+#right{
+    width: 258px;
+    float:right;
+    margin-right: 12px;
+    padding-top: 5px;
+}
+
+#right a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight:bold;
+}
+
+#right ul
+{
+    list-style: none;
+    padding-left: 30px;
+    margin: 0px;
+    display:block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#right ul li{
+    margin-bottom: 20px;
+}
+
+.text ol
+{
+margin-left: 30px;
+}
+
+#categories ul li {
+    margin-bottom: 5px;
+    background: url(../images/list.gif) no-repeat;
+    background-position: 0px 4px;
+    padding-left: 15px;
+
+}
+
+#categories ul li a{
+    color: #000000;
+    font-weight: bold;
+    height: 20px;
+}
+
+#partners ul li {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    background: url(../images/list.gif) no-repeat;
+    background-position: 0px 4px;
+    height: 20px;
+}
+
+#weare ul li {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    background: url(../images/list.gif) no-repeat;
+    background-position: 0px 4px;
+    height: 20px;
+}
+
+#weare ul li a{
+    color: #9a0606;
+    font-weight: bold;
+    border-bottom: 1px dotted #9a0606;
+}
+
+#right h2 {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight:normal;
+    text-align: center;
+    height: 32px;
+    width: 258px;
+    margin: 0;
+    background: url(../images/title_right.jpg) no-repeat;
+    color: #ffffff;
+    padding-top: 13px;
+}
+
+#right li a {
+    margin-left: 10px;
+}
+
+#conbot{
+    background:url(../images/con_bot.jpg);
+    clear:both;
+    height: 17px;
+}
+
+#last{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footer {
+    height: 36px;
+    width: 1000px;
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+article p {
+    margin: 1em;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#footer a{
+    color: #ffffff;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:bold;
+}
