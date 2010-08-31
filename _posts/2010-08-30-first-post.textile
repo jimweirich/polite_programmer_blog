@@ -1,7 +1,0 @@
----
-title: First Post
-author: Jim Weirich
----
-p. This is some text. ok
-
-p. Don't forget this.
