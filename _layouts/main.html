@@ -68,12 +68,11 @@
                   <li>
                     <h2>Categories</h2>
                     <ul>
-                      <li><a href="#">Metaprogramming</a></li>
-                      <li><a href="#">Method Missing</a></li>
-                      <li><a href="#">Modules</a></li>
-                      <li><a href="#">Naming</a></li>
+                      {% for cat in site.categories %}
+                      <li>{{ cat | first }}</li>
+                      {% endfor %}
                     </ul>
-                  </li>
+                 </li>
                </ul>
               </div>
               <!-- end #sidebar -->
