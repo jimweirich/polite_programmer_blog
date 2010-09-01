@@ -369,3 +369,9 @@ a:hover {
 #footer a {
 	color: #FFFFFF;
 }
+.boxed {
+    margin: 0.5em 0em;
+    padding: 0.5em 0.5em;
+    border: 2px solid  #1c3c04;
+    background: #eee;
+}

@@ -1,7 +1,7 @@
 ---
 title: Coming Soon
 author: Jim Weirich
-categories: 
+layout: post
 ---
 p. The Polite Programmer is one who writes their code in such a way that it works well with other programmer's code.
 

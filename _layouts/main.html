@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <!--
     Design by Alicia A Jasmine
     http://www.100webhosting.com
@@ -15,77 +15,29 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{{ page.title }}</title>
-    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <title>The Polite Programmer</title>
+    <!-- <link href="/stylesheets/html5reset.css" rel="stylesheet" type="text/css" media="screen" /> -->
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/stylesheets/syntax.css" rel="stylesheet" type="text/css" media="screen" />
   </head>
   <body>
     <div id="wrapper">
-      <div id="header-wrapper">
-        <div id="header">
-          <div id="logo">
-            <h1><a href="#">{{ page.title }}</a></h1>
-            <p>(be polite when working with others)</p>
-          </div>
-          <div id="menu">
-            <ul>
-              <li class="current_page_item"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- end #header -->
-
+      {% include header.html %}
       <div id="page">
         <div id="page-bgtop">
           <div id="page-bgbtm">
             <div id="content">
-              {{ content }}
-              </div>
-              <!-- end #content -->
-              <div id="sidebar">
-                <ul>
-                  <li>
-                    <div id="search" >
-                      <form method="get" action="#">
-                        <div>
-                          <input type="text" name="s" id="search-text" value="" />
-                          <input type="submit" id="search-submit" value="GO" />
-                        </div>
-                      </form>
-                    </div>
-                    <div style="clear: both;">&nbsp;</div>
-                  </li>
-                  <li>
-                    <h2>About Us</h2>
-                    <p>
-                      We are Jim Weirich and Chris Nelson.  We believe
-                      it is vital to be polite when programming.  This
-                      blog is some of our thoughts on the topic.
-                    </p>
-                  </li>
-                  <li>
-                    <h2>Categories</h2>
-                    <ul>
-                      {% for cat in site.categories %}
-                      <li>{{ cat | first }}</li>
-                      {% endfor %}
-                    </ul>
-                 </li>
-               </ul>
-              </div>
-              <!-- end #sidebar -->
-              <div style="clear: both;">&nbsp;</div>
+             {{ content }}
             </div>
+            <!-- end #content -->
+            {% include sidebar.html %}
+            <!-- end #sidebar -->
+            <div style="clear: both;">&nbsp;</div>
           </div>
         </div>
-        <!-- end #page -->
       </div>
-      <div id="footer">
-        <!-- Please leave the link to http://www.100webhosting.com intact -->
-        <p>Copyright &copy; 2010 <a href="http://politeprogrammer.com"><strong>politeprogrammer.com</strong></a> | Design by <a href="http://www.100webhosting.com/"><strong>100 Web Hosting</strong></a>.</p>
-      </div>
-      <!-- end #footer -->
-    </body>
-  </html>
+      <!-- end #page -->
+    </div>
+    {% include footer.html %}
+ </body>
+</html>

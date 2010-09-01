@@ -1,0 +1,24 @@
+<div id="menu">
+  <ul>
+    <li
+       {% if page.tab == 'home' %}
+       class="current_page_item"
+       {% endif %}
+       ><a href="/">Home</a>
+    </li>
+
+    <li
+       {% if page.tab == 'about' %}
+       class="current_page_item"
+       {% endif %}
+       ><a href="/about.html">About</a>
+    </li>
+
+    <li
+       {% if page.tab == 'contact' %}
+       class="current_page_item"
+       {% endif %}
+       ><a href="/contact.html">Contact</a>
+    </li>
+  </ul>
+</div>

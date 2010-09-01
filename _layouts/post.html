@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+    Design by Alicia A Jasmine
+    http://www.100webhosting.com
+    Released for free under a Creative Commons Attribution 3.0 License
+
+    Name       : Nature Green
+    Description: A two-column, fixed-width design with green color scheme.
+    Version    : 1.0
+    Released   : 23-08-2010
+
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>The Polite Programmer</title>
+    <!-- <link href="/stylesheets/html5reset.css" rel="stylesheet" type="text/css" media="screen" /> -->
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/stylesheets/syntax.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div id="wrapper">
+      {% include header.html %}
+     <!-- end #header -->
+      <div id="page">
+        <div id="page-bgtop">
+          <div id="page-bgbtm">
+            <div id="content">
+              <div class="post">
+                <h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                <div class="entry">
+                  {{ content }}
+                  <p>
+                    <em>
+                      Posted on {{ page.date | date_to_long_string }}
+                      by {{ page.author }}.
+                    </em>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end #content -->
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <div id="search" >
+                    <form method="get" action="#">
+                      <div>
+                        <input type="text" name="s" id="search-text" value="" />
+                        <input type="submit" id="search-submit" value="GO" />
+                      </div>
+                    </form>
+                  </div>
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>About Us</h2>
+                  <p>
+                    We are Jim Weirich and Chris Nelson.  We believe
+                    it is vital to be polite when programming.  This
+                    blog is some of our thoughts on the topic.
+                  </p>
+                </li>
+                <li>
+                  <h2>Categories</h2>
+                  <ul>
+                    {% for cat in site.categories %}
+                    <li>{{ cat | first }}</li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- end #sidebar -->
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+      <!-- end #page -->
+    </div>
+    <div id="footer">
+      <!-- Please leave the link to http://www.100webhosting.com intact -->
+      <p>Copyright &copy; 2010 <a href="http://politeprogrammer.com"><strong>politeprogrammer.com</strong></a> | Design by <a href="http://www.100webhosting.com/"><strong>100 Web Hosting</strong></a>.</p>
+    </div>
+    <!-- end #footer -->
+  </body>
+</html>
